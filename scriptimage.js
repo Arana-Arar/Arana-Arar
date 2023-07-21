@@ -22,7 +22,7 @@ function indicator(num){
     dots.forEach(function(dot){
         dot.style.backgroundColor = "transparent";
     });
-    document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "rgb(255,20,147)";
+    document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "rgb(160,5,5)";
 }
 
 function dot(index){

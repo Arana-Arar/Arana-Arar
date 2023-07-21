@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/51731cd05a.js" crossorigin="anonymous"></script>
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="Style1.css" />
+    <link rel="stylesheet" href="style2.css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,41 +39,71 @@
         </ul>
       </nav>
     </header>
+
+    <section style="width: 100%;">
+        <articulo></articulo>
+    </section>
  
   
     <section class="container">
       <article id="article">
         <div class="image-container">
             
-            <p id="content1" class="active">            
-              <h2>QUIENES SOMOS:</h2><br><br><br>
-                <p class="parrafo">Somos una empresa que presta servicios de hoteleria
-                para dar satisfaccion en el descanso de las personas que nos visitan
-                y hacerlas sentir como en casa.<br><br>
-                Nace con la idea de ofrecer a sus clientes que viajan por placer o negocios, 
-                un ambiente cómodo y  acogedor  que  hará  su  estancia agradable y de confort con atención personalizada.   
-                Estamos  convenientemente ubicado  a  un costado de Bodega Aurrera y  a solo  5 min de Plaza Galerias, 
-                también  puede  encontrar deliciosos  restaurantes,  bares  y  cines  a  sus alrededores.
-                <br><br>Tambien estamos a 20 min de PLaya Linda para disfrutar de unas vacaciones agradables en compañia 
-                de sus familiares.
-                <br><br>Ademas somos una empresa de reciente apertura y por lo tanto queremos 
-                darnos a conocer a traves de las plataformas de internet como Booking y AirBnB.</p>
-                <br><br>
-                <h2>MISIÓN</h2>
-                <br><br><p class="parrafo1">Proveer un servicio de calidad en hotelería, implementando una cocina para que te prepares tus comidas, 
-                cafetera para que te prepares un cafe con todo el sabor de la costa, siendo nuestra prioridad la satisfacción de  servicio  a  nuestros  clientes, 
-                 en un ambiente familiar,  cómodo tranquilo y seguro.</p><br><br>
-
-                <h2>VISIÓN</h2>
-                <br><br><p class="parrafo1">Ser  una  empresa  hotelera  reconocida  a  nivel  nacional y porque no, tambien de manera internacional,  llenando  las  expectativas  
-                de  clientes  que  busquen descanso  placentero  al  finalizar  sus  jornadas  laborales  o  diversión.</p>
-                <br><br>
-                <h2>VALORES</h2>
-                <br><br>
-                <p class="parrafo2">Confianza, Servicio, Seguridad, Honradez y Respeto</p>
-                 
-                           
-               
+            <div class="contact_form">
+              <div class="formulario">			
+              <h1>Formulario de contacto</h1>
+                        
+              <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+        
+                <form action="submeter-formulario.php" method="post">				
+                  <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                      <span class="obligatorio">*</span>
+                    </label>                    
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                  </p>
+                            
+                  <p>
+                    <label for="email" class="colocar_email">Email
+                      <span class="obligatorio">*</span>
+                    </label>
+                      <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                  </p>
+                                
+                  <p>
+                    <label for="telefone" class="colocar_telefono">Teléfono</label>
+                      <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                  </p>		
+                                    
+                  <p>
+                    <label for="website" class="colocar_website">Sitio web</label>
+                      <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                  </p>		
+                                    
+                  <p>
+                    <label for="asunto" class="colocar_asunto">Asunto
+                      <span class="obligatorio">*</span>
+                    </label>
+                       <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                  </p>		
+                                    
+                  <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                      <span class="obligatorio">*</span>
+                    </label>                     
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                 </p>	  								
+                                    
+                 <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+        
+                 <p class="aviso">
+                      <span class="obligatorio"> * </span>los campos son obligatorios.
+                 </p>					
+                                
+                </form>
+                </div>	
+            </div>   
+         
             
         </div>
         <div class="dot-container">
